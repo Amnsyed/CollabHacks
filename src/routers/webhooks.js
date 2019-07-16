@@ -9,7 +9,6 @@ router.post('/', listen);
 
 
 function listen(request, response) {  
-
   messages
   .getMessageByID(request.body.data.id)
   .then(function(res) {
