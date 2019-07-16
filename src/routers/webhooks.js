@@ -10,7 +10,7 @@ router.post('/', listen);
 
 function listen(request, response) {  
 
-  messages
+  
   messages.sendMessage("https://www.ryoko.com/USA/CA/San-Francisco","","","Y2lzY29zcGFyazovL3VzL1BFT1BMRS9iNTQzNDZmNi03ZmExLTQ3ZTktYTRmMi01MTBkY2Y2ZjNhOTM");
   /*.getMessageByID(request.body.data.id)
   .then(function(res) {
