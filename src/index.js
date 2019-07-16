@@ -38,13 +38,14 @@ app.get('/emojis', function(request, response) {
  // sendMessge(text,markdown,roomId);
 //});
 
-const roomId = request.params['roomId'];
-const message = request.params['message'];
-const  = request.params['roomId'];
+
 app.post('/sendMessage', function(request, response) {
+  const roomId = request.params['roomId'];
+  const message = request.params['message'];
+  const markdown = request.params['markdown'];
   //var text = prompt("Enter Text");
   //var markdown = prompt("Enter Markdown");
-  exports.sendMessage(message,markdown,roomId;
+  exports.sendMessage(message,markdown,roomId);
 });
 
 app.get('/people/me', function(request, response) {
