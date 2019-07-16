@@ -41,10 +41,10 @@ app.get('/emojis', function(request, response) {
 
 
 app.post('/sendMessage', function(request, response) {
-  const roomId = request.params['roomId'];
-  const message = request.params['message'];
-  const markdown = request.params['markdown'];
-  console.log(request.params)
+  const roomId = request.query['roomId'];
+  const message = request.query['text'];
+  const markdown = request.query['markdown'];
+  
   //var text = prompt("Enter Text");
   //var markdown = prompt("Enter Markdown");
   messages.sendMessage(message,markdown,roomId);

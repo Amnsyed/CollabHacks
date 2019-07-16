@@ -12,13 +12,12 @@ function getMessageByID(messageId) {
 };
 
 function sendMessage(text, markdown, roomId) {
-  console.log(text)
   return constants.webexAxiosInstance
   .post(`/messages`, {
-    text: text,
-    markdown: markdown,
-    roomId: roomId
-  })
+      text: text,
+      markdown: markdown,
+      roomId: roomId
+    })
   .then(function(res) {
     return res.data;
   })
