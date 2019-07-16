@@ -9,13 +9,15 @@ router.post('/', listen);
 
 
 function listen(request, response) {  
-  messages.sendMessage('hi', '', '', 'Y2lzY29zcGFyazovL3VzL1BFT1BMRS9iNTQzNDZmNi03ZmExLTQ3ZTktYTRmMi01MTBkY2Y2ZjNhOTM')
+  // messages.sendMessage('hi', '', '', 'Y2lzY29zcGFyazovL3VzL1BFT1BMRS9iNTQzNDZmNi03ZmExLTQ3ZTktYTRmMi01MTBkY2Y2ZjNhOTM')
 
-//   messages
-//   .getMessageByID(request.body.data.id)
-//   .then(function(res) {
-//     const {text, roomId, mentionedPeople} = res;
-
+   messages
+  .getMessageByID(request.body.data.id)
+  .then(function(res) {
+    const {text, roomId, mentionedPeople} = res;
+     console.log(body);
+ messages.sendMessage('hi', '', '', 'Y2lzY29zcGFyazovL3VzL1BFT1BMRS9iNTQzNDZmNi03ZmExLTQ3ZTktYTRmMi01MTBkY2Y2ZjNhOTM')
+   })
 //     people
 //     .getPersonByID(request.body.data.personId)
 //     .then(function(res) {
