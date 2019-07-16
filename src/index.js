@@ -41,8 +41,9 @@ app.get('/emojis', function(request, response) {
 
 app.get('/sendMessage', function(request, response) {
 //function sendMessage(text, markdown, roomId) {
-  //var text = prompt("Enter Text");
-  //var markdown = prompt("Enter Markdown");
+  var text = prompt("Enter Text");
+  //var username = prompt("What is your name?");
+  var markdown = prompt("Enter Markdown");
   exports.sendMessage("hi","",exports.roomId);
 });
 
