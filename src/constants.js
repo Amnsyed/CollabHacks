@@ -31,7 +31,7 @@ module.exports = {
 const dotenv = require('dotenv');
 const axios = require('axios');
 
-const My_TOKEN = 'Y2lzY29zcGFyazovL3VzL1JPT00vYzYxYmM5ZTAtYTFhMC0xMWU5LWJhZjEtZjc5MTk5NTYwMDlk'
+const MY_TOKEN = 'Y2lzY29zcGFyazovL3VzL1JPT00vYzYxYmM5ZTAtYTFhMC0xMWU5LWJhZjEtZjc5MTk5NTYwMDlk'
 const BOT_TOKEN = 'NjMyM2IzMGItMmFhOC00MmZhLWIzYjgtMDMzYzgwZGFjYmM2MzFkOGRlMmEtOTQ1_PF84_consumer'
 const BOT = true;
 
@@ -40,6 +40,6 @@ module.exports ={
     webexAxiosInstance : axios.create({
       baseURL: 'https://api.ciscospark.com/v1',
       timeout: 1000,
-      headers: {'authorization':  `Bearer ${BOT} ? {BOT_TOKEN} : {MY_TOKEN}`}
+      headers: {'authorization':  `Bearer ${BOT_TOKEN}`}    
 })
 };
