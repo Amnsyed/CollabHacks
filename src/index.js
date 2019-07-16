@@ -47,7 +47,7 @@ app.post('/sendMessage', function(request, response) {
   
   //var text = prompt("Enter Text");
   //var markdown = prompt("Enter Markdown");
-  messages.sendMessage(message,markdown,roomId);
+  messages.sendMessage(message,markdown,roomId,"");
   response.send("it works");
 });
 
