@@ -34,16 +34,16 @@ app.get('/emojis', function(request, response) {
   response.send('👋 🌎 !')
 });
 
-$.getscript(src/helpers/messages.js),sendM(text,markdown,roomId){
-sendMessge(text,markdown,roomId);
-});
+//$.getscript(src/helpers/messages.js,sendM(text,markdown,roomId){}
+ // sendMessge(text,markdown,roomId);
+//});
 
 
 app.get('/sendMessage', function(request, response) {
 //function sendMessage(text, markdown, roomId) {
   var text = prompt("Enter Text");
   var markdown = prompt("Enter Markdown");
-  sendMessage(text,markdown,roomId);
+  exports.sendMessage(text,markdown,exports.roomId);
 });
 
 app.get('/people/me', function(request, response) {
