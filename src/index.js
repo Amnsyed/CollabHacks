@@ -1,3 +1,4 @@
+
 'use strict';
 // Third part Dependencies/Libraries
 var express = require('express');
@@ -31,6 +32,18 @@ app.get('/', function(request, response) {
 
 app.get('/emojis', function(request, response) {
   response.send('👋 🌎 !')
+});
+
+$.getscript(src/helpers/messages.js),sendM(text,markdown,roomId){
+sendMessge(text,markdown,roomId);
+});
+
+
+app.get('/sendMessage', function(request, response) {
+//function sendMessage(text, markdown, roomId) {
+  var text = prompt("Enter Text");
+  var markdown = prompt("Enter Markdown");
+  sendMessage(text,markdown,roomId);
 });
 
 app.get('/people/me', function(request, response) {
