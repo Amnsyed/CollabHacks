@@ -10,7 +10,7 @@ var constants = require('./constants');
 
 // Routers
 var webhooks = require('./routers/webhooks');
-var {sendMessager} = require('./helpers/messages');
+var messages = require('./helpers/messages');
 
 // Express Initiation 
 app.use(bodyParser.json());
@@ -46,7 +46,8 @@ app.post('/sendMessage', function(request, response) {
   const markdown = request.params['markdown'];
   //var text = prompt("Enter Text");
   //var markdown = prompt("Enter Markdown");
-  exports.sendMessage(message,markdown,roomId);
+  messages.sendMessage(message,markdown,roomId);
+  response.send("it works");
 });
 
 app.get('/people/me', function(request, response) {
