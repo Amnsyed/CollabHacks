@@ -13,5 +13,3 @@ function getPersonByID(personId) {
 };
 
 module.exports = {router, getPersonByID};
-
-

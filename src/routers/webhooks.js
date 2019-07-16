@@ -10,14 +10,11 @@ router.post('/', listen);
 
 function listen(request, response) {  
 
-  
-  messages.sendMessage("https://www.ryoko.com/USA/CA/San-Francisco","","","Y2lzY29zcGFyazovL3VzL1BFT1BMRS9iNTQzNDZmNi03ZmExLTQ3ZTktYTRmMi01MTBkY2Y2ZjNhOTM");
-  /*.getMessageByID(request.body.data.id)
+  messages
+  .getMessageByID(request.body.data.id)
   .then(function(res) {
-  const {text, roomId, mentionedPeople} = res;
-  //messages.sendMessage("https://www.ryoko.com/USA/CA/San-Francisco","","","Y2lzY29zcGFyazovL3VzL1BFT1BMRS9iNTQzNDZmNi03ZmExLTQ3ZTktYTRmMi01MTBkY2Y2ZjNhOTM");
-    
-    
+    const {text, roomId, mentionedPeople} = res;
+
     people
     .getPersonByID(request.body.data.personId)
     .then(function(res) {
@@ -36,7 +33,7 @@ function listen(request, response) {
     .catch(function(error) {
       response.send(error.message);
     })
-  */
+  
 };
 
 module.exports = {router, listen};
