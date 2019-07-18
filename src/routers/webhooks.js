@@ -9,7 +9,7 @@ router.post('/', function(request, response) {
   var personId = request.body.data.personId
   var roomId = request.body.data.roomId
   
-  console.log(messageId)
+  //console.log(messageId)
   
   messages.getMessageByID(messageId)
   .then(function(message){

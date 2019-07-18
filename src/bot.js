@@ -3,10 +3,11 @@ var messages = require('./helpers/messages')
 function processMsg(text, roomId){
   const newMessage = text.replace('Ryoko', '').trim();
   switch (newMessage){
-    case "hi": 
-    messages.sendMessage("Hello", roomId);
+    case "Where Am I?": 
+    messages.sendMessage("San Francisco", roomId);
+    messages.sendMessage("file:///Users/Aman/Downloads/ryoko%20website%20-%20edited%20copy/index.html", roomId);
       break;
-    case "thanks": 
+    case "hi": 
     //send message welcome
          messages.sendMessage("you're welcome", roomId);
       break;

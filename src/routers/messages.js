@@ -5,7 +5,7 @@ var constants = require('../constants');
 router.get('/:msgId', function(request, response) {
     const msgId = request.params['msgId'];
 
-    console.log(msgId)
+    //console.log(msgId)
     return constants
     .webexAxiosInstance
     .get(`/messages/${msgId}`)

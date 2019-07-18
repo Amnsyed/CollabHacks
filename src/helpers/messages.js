@@ -12,7 +12,7 @@ function getMessageByID(messageId) {
 };
 
 function sendMessage(text, roomId) {
-  console.log(text)
+  //console.log(text)
   return constants.webexAxiosInstance
   .post(`/messages`, {
     text: text,
