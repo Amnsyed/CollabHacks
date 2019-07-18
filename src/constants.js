@@ -40,6 +40,6 @@ module.exports ={
     webexAxiosInstance : axios.create({
       baseURL: 'https://api.ciscospark.com/v1',
       timeout: 1000,
-      headers: {'authorization':  `Bearer ${BOT_TOKEN}`}    
+      headers: {'authorization':  `Bearer ${BOT ? BOT_TOKEN : MY_TOKEN}`}    
 })
 };

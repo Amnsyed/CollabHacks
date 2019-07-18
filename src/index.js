@@ -10,8 +10,8 @@ var constants = require('./constants');
 
 // Routers
 var webhooks = require('./routers/webhooks');
-var messages = require('./helpers/messages');
-
+//var messages = require('./helpers/messages');
+var messages = require('./routers/messages')
 // Express Initiation 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
