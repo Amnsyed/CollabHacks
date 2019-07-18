@@ -32,7 +32,7 @@ const dotenv = require('dotenv');
 const axios = require('axios');
 
 const MY_TOKEN = 'Y2lzY29zcGFyazovL3VzL1JPT00vYzYxYmM5ZTAtYTFhMC0xMWU5LWJhZjEtZjc5MTk5NTYwMDlk'
-const BOT_TOKEN = 'NjMyM2IzMGItMmFhOC00MmZhLWIzYjgtMDMzYzgwZGFjYmM2MzFkOGRlMmEtOTQ1_PF84_consumer'
+const BOT_TOKEN = 'ODU1ZWFjNzgtY2Q0ZS00MTk3LTlhM2ItMDMyMDMwZmYyYjgxMzRmYTUzNWEtNzA2_PF84_consumer'
 const BOT = true;
 
 module.exports ={
