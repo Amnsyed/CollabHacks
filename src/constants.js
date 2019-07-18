@@ -31,7 +31,7 @@ module.exports = {
 const dotenv = require('dotenv');
 const axios = require('axios');
 
-const MY_TOKEN = 'Y2lzY29zcGFyazovL3VzL1JPT00vYzYxYmM5ZTAtYTFhMC0xMWU5LWJhZjEtZjc5MTk5NTYwMDlk'
+const MY_TOKEN = 'NjVkNDU0ZWEtNjQ1NC00ZGNiLThkNzYtZGQwZWM1YjA3MDk3ZTZiOGI4NzktMjcw_PF84_consumer'
 const BOT_TOKEN = 'ODU1ZWFjNzgtY2Q0ZS00MTk3LTlhM2ItMDMyMDMwZmYyYjgxMzRmYTUzNWEtNzA2_PF84_consumer'
 const BOT = true;
 
