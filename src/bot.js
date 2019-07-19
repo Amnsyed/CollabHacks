@@ -5,7 +5,7 @@ function processMsg(text, roomId){
   switch (newMessage){
     case "Where Am I?": 
     messages.sendMessage("San Francisco", roomId);
-    messages.sendMessage("file:///Users/Aman/Downloads/ryoko%20website%20-%20edited%20copy/index.html", roomId);
+    messages.sendMessage("https://ryokotravelapp.000webhostapp.com/", roomId);
       break;
     case "hi": 
     //send message welcome
