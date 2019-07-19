@@ -12,19 +12,19 @@ function processMsg(text, roomId){
       break;
     case "hi": 
     //send message welcome
-       messages.sendMessage("you're welcome", roomId);
+       messages.sendMessage("Hello, What can I do for you today?", roomId);
       break;
-    case "joke": 
+    case "Nearby Cities": 
     //send message welcome
-         messages.sendMessage("you're welcome", roomId);
+         messages.sendMessage("Oakland, Foster City, San Jose, Hayward, Sausalito, and Fremont", roomId);
       break;
-    case "love you": 
+    case "thanks": 
     //send message love you back
-         messages.sendMessage("Love You Back", roomId);
+         messages.sendMessage("Happy to Help", roomId);
       break;
     case "help": 
     //send message hi
-         messages.sendMessage("Hello", roomId);
+         messages.sendMessage("Error 404", roomId);
       break;
     default:
       //messages.sendMessage("this aint it cheif, type in help for commands", roomId);
