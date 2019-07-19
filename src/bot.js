@@ -1,4 +1,3 @@
-ls
 var messages = require('./helpers/messages')
 
 function processMsg(text, roomId){
