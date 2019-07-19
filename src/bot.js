@@ -1,15 +1,18 @@
+ls
 var messages = require('./helpers/messages')
 
 function processMsg(text, roomId){
   const newMessage = text.replace('Ryoko', '').trim();
-  switch (newMessage){
-    case "Where Am I?": 
+  const newText= newMessage.toLowerCase(); 
+  //console.log (newText);
+  switch (newText){
+    case "where am i?": 
     messages.sendMessage("San Francisco", roomId);
     messages.sendMessage("https://ryokotravelapp.000webhostapp.com/", roomId);
       break;
     case "hi": 
     //send message welcome
-         messages.sendMessage("you're welcome", roomId);
+       messages.sendMessage("you're welcome", roomId);
       break;
     case "joke": 
     //send message welcome
