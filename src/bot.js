@@ -32,7 +32,7 @@ function processMsg(text, roomId){
   }
 }
 
-var msg ="### Help \n ### Commands: \n * **Where Am I?** , bot will reply back the closest big city and return a link with \n  * **love you**, bot will reply \`u mad cute`\ \n* **thanks**, bot will replay \`you are welcome`\ \n  * **joke**, bot will send a joke";
+var msg ="### Help \n ### Commands: \n * **Where Am I?** , bot will reply back the closest big city and return a link with city information\n  * **Hi**, bot will reply \`Hi`\ back \n* **thanks**, bot will replay \`you are welcome`\ \n  * **joke**, bot will send a joke";
 
 module.exports = {processMsg};
 
