@@ -23,7 +23,7 @@ function processMsg(text, roomId){
       break;
     case "help": 
     //send message hi
-         messages.sendMessage("Error 404", roomId);
+         messages.sendMessage("", roomId, msg);
       break;
     default:
       //messages.sendMessage("this aint it cheif, type in help for commands", roomId);
@@ -31,6 +31,8 @@ function processMsg(text, roomId){
     //send "this aint it cheif, type in "help" for commands"
   }
 }
+
+var msg ="### Help \n ### Commands: \n * **Where Am I?** , bot will reply back the closest big city and return a link with \n  * **love you**, bot will reply \`u mad cute`\ \n* **thanks**, bot will replay \`you are welcome`\ \n  * **joke**, bot will send a joke";
 
 module.exports = {processMsg};
 
